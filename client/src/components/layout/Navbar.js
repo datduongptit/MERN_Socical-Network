@@ -7,21 +7,21 @@ import { logout } from '../../actions/auth';
 const Navbar = ({ logout, auth: { isAuthenticated, loading } }) => {
   const authUser = (
     <ul>
-      <li>
+      <li className='btn-nav'>
         <Link to='/profiles'>Developers</Link>
       </li>
-      <li>
-        <Link to='/posts'>Posts</Link>
+      <li className='btn-nav'>
+        <Link to='/posts'>Community</Link>
       </li>
-      <li>
+      <li className='btn-nav'>
         <Link to='/dashboard'>
           <span className='hide-sm'>Dashboard</span>{' '}
         </Link>
       </li>
-      <li>
+      <li className='btn-nav'>
         <a onClick={logout} href='#!'>
-          <i className='fa fa-sign-out-alt'></i>{' '}
-          <span className='hide-sm'>Logout</span>
+          <i className='fas fa-sign-out-alt'></i>{' '}
+          <span className='hide-sm btn-logout'>Logout</span>
         </a>
       </li>
     </ul>
@@ -45,8 +45,8 @@ const Navbar = ({ logout, auth: { isAuthenticated, loading } }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fa fa-code'></i>
-          DevConnector
+          <i className='fa fa-codepen'></i>
+          DEVSOCIAL
         </Link>
       </h1>
       <Fragment>{isAuthenticated ? authUser : authGuest}</Fragment>

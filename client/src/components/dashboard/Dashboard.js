@@ -21,29 +21,34 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className='large text-primary'>Dashboard</h1>
-      <p className='lead'>
-        <i className='fa fa-user'>Welcome {user && user.name}</i>
-      </p>
-      {profile !== null ? (
-        <Fragment>
-          <DashboardActions />
-          <Experience experience={profile.experience} />
-          <Education education={profile.education} />
-          <div className='my-2'>
-            <button onClick={() => deleteAccount()} className='btn btn-danger'>
-              Delete My Account
-            </button>
-          </div>
-        </Fragment>
-      ) : (
-        <Fragment>
-          <p>You have not yet setup a profile, please add some info?</p>
-          <Link to='/create-profile' className='btn btn-primary my-1'>
-            Create Profile
-          </Link>
-        </Fragment>
-      )}
+      <div style={{textAlign:'center'}}>
+        <h1 className='large text-primary'>DASHBOARD</h1>
+        <p className='lead'>
+          <i className='fa fa-user'>Welcome {user && user.name}</i>
+        </p>
+        {profile !== null ? (
+          <Fragment>
+            <DashboardActions />
+            <Experience experience={profile.experience} />
+            <Education education={profile.education} />
+            <div className='my-2'>
+              <button
+                onClick={() => deleteAccount()}
+                className='btn btn-danger'
+              >
+                Delete My Account
+              </button>
+            </div>
+          </Fragment>
+        ) : (
+          <Fragment>
+            <p>You have not yet setup a profile, please add some info?</p>
+            <Link to='/create-profile' className='btn btn-primary my-1'>
+              Create Profile
+            </Link>
+          </Fragment>
+        )}
+      </div>
     </Fragment>
   );
 };
