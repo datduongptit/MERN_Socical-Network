@@ -54,7 +54,7 @@ const Profile = ({
               )}
             </div>
             {profile.githubusername && (
-              <ProfileGithubRepos />
+              <ProfileGithubRepos username={profile.githubusername} />
             )}
           </div>
           <Link to='/profiles' className='btn btn-light'>

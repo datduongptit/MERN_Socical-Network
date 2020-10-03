@@ -22,6 +22,8 @@ const ProfileExperience = ({
   );
 };
 
-ProfileExperience.propTypes = {};
+ProfileExperience.propTypes = {
+  experience: PropTypes.object.isRequired,
+};
 
 export default ProfileExperience;
