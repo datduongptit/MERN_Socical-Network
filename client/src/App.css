@@ -202,7 +202,12 @@ img {
 
 .bg-dark {
   background: rgb(158, 67, 218);
-  background: linear-gradient(100deg, rgba(158, 67, 218, 1) 0%, rgba(252, 176, 69, 1) 0%, rgba(29, 184, 253, 1) 90%);
+  background: linear-gradient(
+    100deg,
+    rgba(158, 67, 218, 1) 0%,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(29, 184, 253, 1) 90%
+  );
   color: #fff;
 }
 
@@ -345,7 +350,12 @@ button {
 
 .navbar-gradient {
   background: rgb(158, 67, 218);
-  background: linear-gradient(100deg, rgba(158, 67, 218, 1) 0%, rgba(252, 176, 69, 1) 0%, rgba(29, 184, 253, 1) 90%);
+  background: linear-gradient(
+    100deg,
+    rgba(158, 67, 218, 1) 0%,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(29, 184, 253, 1) 90%
+  );
 }
 
 .navbar ul {
@@ -360,9 +370,8 @@ button {
 }
 
 .navbar a:hover {
-  color: black
+  color: black;
 }
-
 
 .navbar .welcome span {
   margin-right: 0.6rem;
@@ -456,15 +465,15 @@ button {
   margin-bottom: 1rem;
 }
 
-.profile-exp>div,
-.profile-edu>div {
+.profile-exp > div,
+.profile-edu > div {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: #ccc 1px dotted;
 }
 
-.profile-exp>div:last-child,
-.profile-edu>div:last-child {
+.profile-exp > div:last-child,
+.profile-edu > div:last-child {
   border: 0;
 }
 
@@ -481,12 +490,12 @@ button {
   display: flex;
 }
 
-.profile-github .repo>div:first-child {
+.profile-github .repo > div:first-child {
   flex: 7;
   flex-basis: 70%;
 }
 
-.profile-github>div:last-child {
+.profile-github > div:last-child {
   flex: 3;
   flex-basis: 20%;
 }
@@ -504,7 +513,7 @@ button {
   align-items: center;
 }
 
-.post>div:first-child {
+.post > div:first-child {
   text-align: center;
 }
 

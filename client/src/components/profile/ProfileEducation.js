@@ -1,5 +1,4 @@
 import React from 'react';
-import Moment from 'react-moment';
 
 const ProfileEducation = ({
   education: { school, degree, fieldofstudy, current, from , to, description },
@@ -8,8 +7,8 @@ const ProfileEducation = ({
     <div>
       <h3 className='text-dark'> {school} </h3>
       <p>
-        <Moment format='YYYY/MM/DD'> {from} </Moment> -{' '}
-        {current ? ' Now' : <Moment format='YYYY/MM/DD'> {to} </Moment>}
+      {from.slice(0, 10)} {' - '}
+        {current ? ' Now' :  to.slice(0, 10) }
       </p>
       <p>
         <strong>Degree: </strong> {degree}
